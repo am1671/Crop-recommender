@@ -1,0 +1,189 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    font-weight: 600;
+}
+
+main{
+    min-height: 95vh;
+}
+
+.image-port{
+    width:100%;
+    padding:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+body{
+    background-color: #7BCF7B;
+    color: black;
+    
+}
+
+.res-width{
+    width:55%;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+  }
+  
+  h1 {
+   
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.7rem 3rem;
+    font-family: 'Raleway';
+    font-weight: 600;
+  }
+  
+  #map {
+    height: 91vh;
+  }
+  
+  
+  /* Info-Window CSS */
+  
+   /* style the box which holds the text of the information window   */
+  .gm-style .gm-style-iw {
+      background-color: #252525 !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: max-content !important;
+      height: fit-content !important;
+      /* min-height: 120px !important; */
+      max-width: 50px;
+      padding-top: 8px;
+      display: block !important;
+      font-family: 'Raleway';
+   }    
+  
+  
+  
+  /* style the paragraph text*/
+  .gm-style div div div div div div div div {
+      /* background-color: #252525 !important; */
+      margin: 5px;
+      padding: 5px;
+      /* top: 30px; */
+      color: mediumaquamarine;
+      font-size: 15px;
+  }
+  
+  h6{
+    font-size: 20px;
+  }
+  
+   /* useless */
+   .gm-style .gm-style-iw #google-popup {
+    padding: 0px;
+  }
+  
+  /* useless 
+  .gm-style-iw-d {
+     color: #000000; 
+  }
+  */
+  
+  .gm-style div div div div div div div {
+    visibility: visible;
+  }
+  .gm-style-iw + div {
+    display: none;
+  }
+  .gm-style div div div div div div.gm-style-iw div div {
+    visibility: visible;
+  }
+  
+  
+  
+   /* Autocomplete Box CSS */
+      #description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+      }
+  
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+  
+      #infowindow-content {
+        display: none;
+      }
+  
+      #map #infowindow-content {
+        display: inline;
+      }
+  
+      .pac-card {
+        background-color: rgba(255, 255, 255, 0.678);
+        border: 0;
+        border-radius: 2px;
+        box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+        margin: 10px;
+        padding: 0 0.5em;
+        font: 400 18px;
+        overflow: hidden;
+        font-family: 'Raleway';
+        padding: 0;
+        opacity: 0.95;
+        width: fit-content;
+      }
+  
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+  
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+  
+      .pac-controls label {
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-weight: 600;
+      }
+  
+      #pac-input {
+        background-color: rgb(255, 255, 255);
+        font-family: 'Raleway';
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 310px;
+      }
+  
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+  
+      #title {
+        color: rgb(255, 255, 255);
+        background-color: rgb(5, 89, 106);
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+      }
+  
+   
