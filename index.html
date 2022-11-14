@@ -4,32 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    rel="stylesheet"
-    />
-    <!-- MDB -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
-    
 
     <link rel="stylesheet" href="styles.css">
 
-<!-- map head contents -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiRplnUqyJZxSMcu0bwpm3crWdRNCTyE&libraries=places&map_ids=e56047c132362c5f&callback=initMap" async defer>
     </script>
     <script src="scripts.js"></script>
-    
   
     </script>
 
@@ -38,8 +21,15 @@
 
 <body>
 
-    <h1>Maharashtra Crop Recommender</h1>
+    <h1><u>Maharashtra Crop Recommender</u></h1>
 
+    <h2>Tips:</h2> 
+    <hr id="break">
+
+    <section class="help-section">
+          <span class="help-point">Try to search for a location in Maharashtra using the search box</span>
+          <span class="help-point">Try clicking an icon to reveal more information about the region</span>
+    </section> 
 
     <div class="pac-card" id="pac-card">
         <div>
@@ -47,11 +37,11 @@
           <div id="type-selector" class="pac-controls">
             <input type="radio" name="type" id="changetype-all" checked="checked" />
             <label for="changetype-all">All</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
             
             <input type="radio" name="type" id="changetype-establishment" />
             <label for="changetype-establishment">Establishment</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
 
             <input type="radio" name="type" id="changetype-address" />
             <label for="changetype-address">Address</label>
@@ -59,21 +49,15 @@
 
             <input type="radio" name="type" id="changetype-geocode" />
             <label for="changetype-geocode">Geocode</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
             <input type="radio" name="type" id="changetype-cities" />
             <label for="changetype-cities">Cities</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+
             <input type="radio" name="type" id="changetype-regions" />
             <label for="changetype-regions">Regions</label>
           </div>
-          <br />
-          <!-- <div id="strict-bounds-selector" class="pac-controls">
-            <input type="checkbox" id="use-location-bias" value="" checked />
-            <label for="use-location-bias">Bias to view</label>
-    
-            <input type="checkbox" id="use-strict-bounds" value="" />
-            <label for="use-strict-bounds">Strict bounds</label>
-          </div> -->
+
         </div>
         <div id="pac-container">
           <input id="pac-input" type="text" placeholder="Enter a location" />
